@@ -1,0 +1,48 @@
+/*------------
+  grid setup
+------------*/
+
+/*columns stay next to each other*/
+[class*='col-'] {
+  float: left;
+}
+/* set width of first column to 1/4 of gid */
+.col-1-4 {
+  width: 25%;
+}
+
+/* set width of second column to 3/4 of gid */
+.col-3-4 {
+  width: 75%;
+}
+
+/* clear fix -
+    prevent parent element fomr collapsing to zero height since it
+    has only floated children */
+.grid:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*--------------
+  gutter setup
+--------------*/
+
+/* when we set a width, that element stays that width, despite padding or borders
+being applied.*/
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+ /* apply fixed padding to the left and right side of all columns */
+[class*='col-'] {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.main-content {
+  padding-top: 20px;
+}
