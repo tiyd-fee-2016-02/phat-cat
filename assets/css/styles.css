@@ -9,21 +9,25 @@
     color: #333;
     line-height: 20px;
 }
+
 /*Currently affecting all href links on the page*/
 .left-nav-item a:link {
     text-decoration: none;
     color: #333;
     font:13px / 1.4 Helvetica, arial, sans-serif;
 }
+
 /*after link has been click it stays the same*/
 .left-nav-item a:visited {
     color: #333;
 }
+
 /*Hovers*/
 .left-nav-item a:hover {
     color: #51a7e8;
 }
-.octicon:hover {
+
+.mega-octicon:hover {
     color: #51a7e8;
 }
 
@@ -34,9 +38,11 @@
     padding: .2em;
     float: left;
 }
+
 .header-logo:hover {
     color: #51a7e8;
 }
+
 .site-search {
     padding: 4px 15px 2px 15px;
     margin:.3em;
@@ -46,6 +52,7 @@
     box-shadow: inset 2px;
     box-sizing: border-box;
 }
+
 /*When you click the search input box*/
 .site-search:focus {
     border:1px solid #51a7e8;
@@ -55,6 +62,7 @@
 .header-nav-item:hover {
     color: #51a7e8;
 }
+
 .left-nav-item {
     display: inline-block;
     margin-left: 1em;
@@ -64,18 +72,22 @@
     display: inline-block;
     padding: .2em;
 }
+
 .header-nav-left {
     margin-left: 20em;
     margin-top: -1.5em;
-    }
-.header-nav-right  {
+}
+
+.header-nav-right {
     float:right;
     margin-top: -1.5em;
     margin-right: 1em;
 }
+
 .footer-container {
     border-top: 1px solid #E5E5E5;
 }
+
 /*still behaving like the other links. Need to overide*/
 .site-footer-links a:link {
     color: #4078c0;
@@ -109,6 +121,7 @@
     color: #4078c0;
 
 }
+
 .footer-links-left a:hover {
     color: #4078c0;
     text-decoration: underline;
@@ -125,6 +138,7 @@
     color: #4078c0;
 
 }
+
 .footer-links-right a:hover {
     color: #4078c0;
     text-decoration: underline;
@@ -135,6 +149,7 @@
     float:right;
     padding: .1em;
 }
+
 .bottom-logo {
     text-align: center;
     color:#999999;
@@ -142,12 +157,6 @@
     margin-left: 20em;
     margin-top: 1em;
 }
-
-
-
-
-
-
 
 /*------------
   grid setup
@@ -300,7 +309,7 @@ ul {
   display: block !important;
 }
 
-.user-info pad-li .octicon {
+.user-info .octicon {
   color: rgb(135, 135,135) !important;
 }
 
