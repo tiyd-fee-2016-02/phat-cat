@@ -8,16 +8,18 @@
 }
 /* set width of first column to 1/4 of gid */
 .col-1-4 {
-  width: 25%;
+  width: 26%;
+  /*border: 1px dashed #000;*/
 }
 
 /* set width of second column to 3/4 of gid */
 .col-3-4 {
-  width: 75%;
+  width: 74%;
+  border: 1px dashed #000;
 }
 
 /* clear fix -
-    prevent parent element fomr collapsing to zero height since it
+    prevent parent element from collapsing to zero height since it
     has only floated children */
 .grid:after {
   content: "";
@@ -45,4 +47,138 @@ being applied.*/
 
 .main-content {
   padding-top: 20px;
+  width: 980px;  /* GitHub is not reponsive */
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/*-----------------
+  end gutter setup
+-----------------*/
+
+a {
+  color: #4078c0;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+body {
+  font: 13px / 1.4 Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  display: block;
+  min-width: 1020px;
+  word-wrap: break-word;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+ul {
+  list-style: none;
+  /*border: 1px dashed #000;*/
+}
+
+.user-stats {
+  display: block;
+  height: 70px;
+  margin-bottom: 12px;
+  /*border: 1px dashed red;*/
+}
+
+.user-stat-link {
+  display: block;
+  position: relative;
+  float: left;
+  width: calc(100% / 3);
+  font-size: 11px;
+  text-decoration: none;
+  text-align: center;
+  /*border: 1px dashed #000;*/
+}
+
+.user-stat-value {
+  color: #4078C0;
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.text-muted {
+  color: rgb(98, 98, 98);
+}
+
+.text-muted:hover {
+  color: #4078C0;
+}
+
+.user-info-link:hover {
+  text-decoration: underline;
+}
+
+.pad-top-bottom {
+  padding-top: 12px !important;
+  padding-bottom: 12px !important;
+}
+
+.border-top {
+  border-top: 1px #E5E5E5 solid !important;
+}
+
+.border-bottom {
+  border-bottom: 1px #E5E5E5 solid !important;
+}
+
+.pad-li {
+  text-align: -webkit-match-parent !important;
+  display: block !important;
+  padding-top: 3px !important;
+  padding-bottom: 3px !important;
+}
+
+.user-info {
+  font-size: 14px;
+}
+
+.pos-relative-a {
+  position: relative !important;
+}
+
+.dis-block {
+  width: 230px;
+  height: 230px;
+  display: block !important;
+}
+
+.octicon {
+  color: rgb(135, 135,135) !important;
+}
+
+.user-h1 {
+  width: 230px;
+  line-height: 1;
+  margin-top: 12px !important;
+  margin-bottom: 12px !important;
+}
+
+.full-name {
+  font-size: 26px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.user-name {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
+  color: #666666;
+}
+
+.octocat-image {
+  width: 230px;
+  height: 230px;
+}
+
+.rounded {
+    border-radius: 6px !important;
 }
