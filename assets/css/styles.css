@@ -9,6 +9,7 @@
     color: #333;
     line-height: 20px;
 }
+
 /*Currently affecting all href links on the page*/
 .left-nav-item a:link {
     text-decoration: none;
@@ -17,15 +18,18 @@
     font-weight: bold;
     font-size: 12px;
 }
+
 /*after link has been click it stays the same*/
 .left-nav-item a:visited {
     color: #333;
 }
+
 /*Hovers*/
 .left-nav-item a:hover {
     color: #51a7e8;
 }
-.octicon-mark-github:hover {
+
+.mega-octicon:hover {
     color: #51a7e8;
 }
 
@@ -46,9 +50,11 @@
     padding: .2em;
     float: left;
 }
+
 .header-logo:hover {
     color: #51a7e8;
 }
+
 .site-search {
     padding: 4px 15px 2px 15px;
     margin-top: .5em;
@@ -58,6 +64,7 @@
     box-shadow: inset 2px;
     box-sizing: border-box;
 }
+
 /*When you click the search input box*/
 .site-search:focus {
     border:1px solid #51a7e8;
@@ -67,6 +74,7 @@
 .header-nav-item:hover {
     color: #51a7e8;
 }
+
 .left-nav-item {
     display: inline-block;
     margin-left: 1em;
@@ -76,18 +84,22 @@
     display: inline-block;
     padding: .2em;
 }
+
 .header-nav-left {
     margin-left: 28em;
     margin-top: -1.5em;
-    }
-.header-nav-right  {
+}
+
+.header-nav-right {
     float:right;
     margin-top: -1.8em;
     margin-right: 1.5em;
 }
+
 .footer-container {
     border-top: 1px solid #E5E5E5;
 }
+
 /*still behaving like the other links. Need to overide*/
 .site-footer-links a:link {
     color: #4078c0;
@@ -122,6 +134,7 @@
     color: #4078c0;
 
 }
+
 .footer-links-left a:hover {
     color: #4078c0;
     text-decoration: underline;
@@ -136,8 +149,8 @@
 
 .footer-links-right a:visited {
     color: #4078c0;
-
 }
+
 .footer-links-right a:hover {
     color: #4078c0;
     text-decoration: underline;
@@ -148,6 +161,7 @@
     float:right;
     padding: .1em;
 }
+
 .bottom-logo {
     color:#999999;
     position:absolute;
@@ -159,12 +173,6 @@
     font-size: 5px;
     padding: .2em;
 }
-
-
-
-
-
-
 
 
 /*------------
@@ -202,9 +210,11 @@
   clear: both;
 }
 
-/*--------------
+/*---------------
+  end grid setup
+/*---------------
   gutter setup
---------------*/
+---------------*/
 
 /* when we set a width, that element stays that width, despite padding or borders
 being applied.*/
@@ -324,7 +334,7 @@ ul {
   display: block !important;
 }
 
-.user-info pad-li .octicon {
+.user-info .octicon {
   color: rgb(135, 135,135) !important;
 }
 
@@ -356,4 +366,77 @@ ul {
 
 .rounded {
     border-radius: 6px !important;
+}
+
+.tab-link {
+  display: inline-block;
+  padding: 8px 12px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #666;
+  text-decoration: none;
+  /*background-color: transparent;*/
+  border: 1px solid transparent;
+  border-bottom: 0;
+}
+
+.tabs {
+  margin-top: 0;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #DDD;
+}
+
+.clicked-tab {
+  display: inline-block;
+  padding: 8px 12px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000;
+  text-decoration: none;
+  background-color: transparent;
+  border-top: 1px solid #DDD;
+  border-left: 1px solid #DDD;
+  border-right: 1px solid #DDD;
+  border-bottom: 1px solid #FFF;
+  margin-bottom: -1px;
+}
+
+.button-wrapper {
+  height: auto;
+  float: right;
+  /*border: 1px dashed red;*/
+}
+
+.follow-btn {
+  display: inline-block;
+  position: relative;;
+  color: #FFF;
+  font-weight: bold;
+  padding: 3px 10px;
+  background-image: linear-gradient(#8ADD6D, #60D044);
+  border-radius: 3px;
+  border: 1px solid #5CA941;
+  vertical-align: middle;
+  margin-top: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.select-btn {
+  position: relative;
+  display: inline-block;
+  padding: 3px 10px;
+  font-size: 10px;
+  font-weight: bold;
+  line-height: 18px;
+  color: #333;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #EEE;
+  background-image: linear-gradient(#FCFCFC, #EEE);
+  border: 1px solid #D5D5D5;
+  border-radius: 3px;
+  margin-top: 5px;
+  margin-left: 5px;
 }

@@ -8,6 +8,7 @@
     <title>Octocat - Static HTML</title>
   </head>
   <body>
+
           <header>
             <div class="column-4-4">
             <div class="header-container">
@@ -35,6 +36,7 @@
           </div>
       </div>
       </header>
+
     <div class="whole-page"> <!-- whole page -->
       <div class="ajax-container"> <!-- ajax container -->
         <div class="main-content"> <!-- content container -->
@@ -90,12 +92,23 @@
             </div>
             <div class="col-3-4"> <!-- col-3-4 container 75% wide -->
               <div class="tab-container">
-                <div class="follow-btn">
-                </div>
+
+                <span class="button-wrapper">
+                  <span class="follow-btn">
+                    <span class="octicon octicon-person"></span>
+                    Follow
+                  </span>
+                  <span class="select-btn">
+                    <span class="octicon octicon-stop"></span>
+                    <span class="octicon octicon-triangle-down"></span>
+                  </span>
+                </span>
+
+              </div>
                 <nav class="tabs">
-                  <a href="#" id="cont-tab" class="tab-link"><span class="octicon octicon-diff-added"></span>Contribution</a>
-                  <a href="#" id="repo-tab" class="tab-link"><span class="octicon octicon-repo"></span>Repositories</a>
-                  <a href="#" id="act-tab" class="tab-link"><span class="octicon octicon-rss"></span>Activity</a>
+                  <a href="#" id="cont-tab" class="tab-link"><span class="octicon octicon-diff-added"></span> &nbsp; Contribution</a>
+                  <a href="#" id="repo-tab" class="tab-link"><span class="octicon octicon-repo"></span> &nbsp; Repositories</a>
+                  <a href="#" id="act-tab" class="tab-link"><span class="octicon octicon-rss"></span> &nbsp; Activity</a>
                 </nav>
                 <div id="cont-tab-content" class="cont-tab-wrapper"> <!-- contribution tab content -->
                   <div class="">
