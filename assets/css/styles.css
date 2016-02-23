@@ -36,6 +36,22 @@
 .octicon-octoface {
     color: #333;
 }
+.octicon-octoface:hover {
+    color: #51a7e8;
+}
+
+.octicon-bell:hover {
+    color: #51a7e8;
+}
+
+.octicon-plus:hover {
+    color: #51a7e8;
+}
+
+
+.octicon-triangle-down:hover{
+    color: #51a7e8;
+}
 
 .header-container: {
     width: 980px;
@@ -95,11 +111,12 @@
 .header-nav-right {
     float:right;
     margin-top: -1.8em;
-    margin-right: 1.5em;
+    margin-right: .8em;
 }
 
 .footer-container {
     border-top: 1px solid #E5E5E5;
+    line-height: 50px;
 }
 
 /*still behaving like the other links. Need to overide*/
@@ -166,9 +183,7 @@
 
 .bottom-logo {
     color:#999999;
-    position:absolute;
-    left:50%;
-    bottom: 58px;
+    bottom: 28px;
 }
 
 .octicon-triangle-down {
@@ -186,8 +201,10 @@
   float: left;
 }
 /*set wdith of header to 100% of grid*/
-.col-4-4 {
-    width: 100%;
+.header-column {
+    width: 980px;
+    margin-right: auto;
+    margin: auto;
 }
 
 /* set width of first column to 1/4 of gid */
