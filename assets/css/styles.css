@@ -187,9 +187,11 @@
   clear: both;
 }
 
-/*--------------
+/*---------------
+  end grid setup
+/*---------------
   gutter setup
---------------*/
+---------------*/
 
 /* when we set a width, that element stays that width, despite padding or borders
 being applied.*/
@@ -341,4 +343,77 @@ ul {
 
 .rounded {
     border-radius: 6px !important;
+}
+
+.tab-link {
+  display: inline-block;
+  padding: 8px 12px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #666;
+  text-decoration: none;
+  /*background-color: transparent;*/
+  border: 1px solid transparent;
+  border-bottom: 0;
+}
+
+.tabs {
+  margin-top: 0;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #DDD;
+}
+
+.clicked-tab {
+  display: inline-block;
+  padding: 8px 12px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000;
+  text-decoration: none;
+  background-color: transparent;
+  border-top: 1px solid #DDD;
+  border-left: 1px solid #DDD;
+  border-right: 1px solid #DDD;
+  border-bottom: 1px solid #FFF;
+  margin-bottom: -1px;
+}
+
+.button-wrapper {
+  height: auto;
+  float: right;
+  /*border: 1px dashed red;*/
+}
+
+.follow-btn {
+  display: inline-block;
+  position: relative;;
+  color: #FFF;
+  font-weight: bold;
+  padding: 3px 10px;
+  background-image: linear-gradient(#8ADD6D, #60D044);
+  border-radius: 3px;
+  border: 1px solid #5CA941;
+  vertical-align: middle;
+  margin-top: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.select-btn {
+  position: relative;
+  display: inline-block;
+  padding: 3px 10px;
+  font-size: 10px;
+  font-weight: bold;
+  line-height: 18px;
+  color: #333;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #EEE;
+  background-image: linear-gradient(#FCFCFC, #EEE);
+  border: 1px solid #D5D5D5;
+  border-radius: 3px;
+  margin-top: 5px;
+  margin-left: 5px;
 }
