@@ -445,3 +445,78 @@ ul {
   margin-top: 5px;
   margin-left: 4px;
 }
+
+.repo-container {
+  position: relative;
+  margin-bottom: 30px;
+  border-radius: 3px;
+}
+
+.repo-title {
+  display: block;
+  padding: 9px 10px 10px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 17px;
+  background-color: #f5f5f5;
+  border: 1px solid #d8d8d8;
+  border-bottom: 0;
+  border-radius: 3px 3px 0 0;
+}
+
+.repo-list {
+  padding: 0;
+  list-style: none;
+  font-size: 13px;
+  color: #666;
+  background: #fff;
+  border-top: 1px solid #d8d8d8;
+  border-left: 1px solid #d8d8d8;
+  border-right: 1px solid #d8d8d8;
+  border-bottom: 0px solid #d8d8d8;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.repo-list-item {
+  padding: 0;
+  list-style: none;
+  font-size: 13px;
+  color: #666;
+  background: #fff;
+}
+
+.repo-link {
+  position: relative;
+  display: block;
+  padding: 10px 10px 10px 10px;
+  font-size: 14px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.repo-stars {
+  float: right;
+  font-size: 12px;
+  color: #888;
+  margin-top: 10px;
+}
+
+.repo-name {
+  color: #4078C0;
+  font-weight: bold;
+  cursor: auto;
+}
+
+.repo-name:hover {
+  text-decoration: underline;
+}
+
+.repo-desc {
+  font-size: 12px;
+  color: #888;
+  padding-left: 22px;
+}
+
+.repo-icon {
+  color: #888;
+}
