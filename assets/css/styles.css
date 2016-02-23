@@ -420,14 +420,17 @@ ul {
   border: 1px solid #5CA941;
   vertical-align: middle;
   margin-top: 5px;
-  margin-right: 5px;
+  margin-right: 4px;
   cursor: pointer;
 }
 
 .select-btn {
   position: relative;
   display: inline-block;
-  padding: 3px 10px;
+  padding-bottom: 1px;
+  padding-top: 1px;
+  padding-left: 3px;
+  padding-right: 4px
   font-size: 10px;
   font-weight: bold;
   line-height: 18px;
@@ -440,5 +443,5 @@ ul {
   border: 1px solid #D5D5D5;
   border-radius: 3px;
   margin-top: 5px;
-  margin-left: 5px;
+  margin-left: 4px;
 }
