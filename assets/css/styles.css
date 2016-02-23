@@ -41,6 +41,8 @@
     width: 980px;
     margin-right: auto;
     margin-left: auto;
+    padding-left:5em auto;
+    padding-right:5em auto;
 }
 
 .header-logo {
