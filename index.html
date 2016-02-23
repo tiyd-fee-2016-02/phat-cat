@@ -10,10 +10,30 @@
   <body>
 
     <header>
-      <div>
-        <!-- header content -->
+      <div class="header-container">
+        <div class="header-logo">
+            <div class="mega-octicon octicon-mark-github"></div>
+        </div>
+        <div>
+            <input class="site-search" placeholder="Search Github">
+        </div>
+        <div class="header-nav-items">
+        <ul class="header-nav-left">
+            <li class="left-nav-item"><a href="#">Pull Requests</a></li>
+            <li class="left-nav-item"><a href="#">Issues</a></li>
+            <li class="left-nav-item"><a href="#">Gist</a></li>
+        </ul>
+        <ul class="header-nav-right">
+            <li class="right-nav-item"><div class="octicon octicon-bell"></div></li>
+            <li class="right-nav-item dropdown js-menucontainer"><div class="octicon octicon-plus">&nbsp<div class="octicon octicon-triangle-down"></div></div></li>
+            <li class="right-nav-item dropdown js-menu-container">
+                <a class="right-nav-item header-nav-link"><div class="octicon octicon-octoface"></div></a>
+                    <div class="header-menu-content js-menu-content"> </div>
+            </li>
+        </ul>
       </div>
-    </header>
+    </div>
+</header>
 
     <div class="whole-page"> <!-- whole page -->
       <div class="ajax-container"> <!-- ajax container -->
@@ -143,8 +163,27 @@
     </div>
 
     <footer>
-      <div>
-        <!-- footer content -->
+      <div class="footer-container">
+         <div class="site-footer-links">
+         <ul class="site-footer-links-left">
+            <li class="footer-links-info foooter-links-left"> 2016 GitHub, Inc.</li>
+            <li class="footer-links-left"><a href="#">Terms</a></li>
+            <li class="footer-links-left"><a href="#">Privacy</a></li>
+            <li class="footer-links-left"><a href="#">Security</a></li>
+            <li class="footer-links-left"><a href="#">Contact</a></li>
+            <li class="footer-links-left"><a href="#">Help</a></li>
+        </ul>
+        <div id="bottom-logo" class="bottom-logo octicon octicon-mark-github"></div>
+        <ul class="footer-links-right">
+                <li class="footer-links-right"><a href="#">Status</a></li>
+                <li class="footer-links-right"><a href="#">API</a></li>
+                <li class="footer-links-right"><a href="#">Training</a></li>
+                <li class="footer-links-right"><a href="#">Shop</a></li>
+                <li class="footer-links-right"><a href="#">Blog</a></li>
+                <li class="footer-links-right"><a href="#">About</a></li>
+                <li class="footer-links-right"><a href="#">Pricing</a></li>
+            </ul>
+          </div>
       </div>
     </footer>
 
