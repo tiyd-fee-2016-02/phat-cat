@@ -10,10 +10,30 @@
   <body>
 
     <header>
-      <div>
-        <a class="header-logo" <span class="octicon octicon-mark-github"></span> </a>
+      <div class="header-container">
+        <div class="header-logo">
+            <div class="mega-octicon octicon-mark-github"></div>
+        </div>
+        <div>
+            <input class="site-search" placeholder="Search Github">
+        </div>
+        <div class="header-nav-items">
+        <ul class="header-nav-left">
+            <li class="left-nav-item"><a href="#">Pull Requests</a></li>
+            <li class="left-nav-item"><a href="#">Issues</a></li>
+            <li class="left-nav-item"><a href="#">Gist</a></li>
+        </ul>
+        <ul class="header-nav-right">
+            <li class="right-nav-item"><div class="octicon octicon-bell"></div></li>
+            <li class="right-nav-item dropdown js-menucontainer"><div class="octicon octicon-plus">&nbsp<div class="octicon octicon-triangle-down"></div></div></li>
+            <li class="right-nav-item dropdown js-menu-container">
+                <a class="right-nav-item header-nav-link"><div class="octicon octicon-octoface"></div></a>
+                    <div class="header-menu-content js-menu-content"> </div>
+            </li>
+        </ul>
       </div>
-    </header>
+    </div>
+</header>
 
     <div class="whole-page"> <!-- whole page -->
       <div class="ajax-container"> <!-- ajax container -->
