@@ -1,6 +1,6 @@
 .header-container {
     width: 100%;
-    height: 3em;
+    height: 50px;
     background: #F5F5F5;
     position: relative;
     padding-top: .5em;
@@ -14,6 +14,8 @@
     text-decoration: none;
     color: #333;
     font:13px / 1.4 Helvetica, arial, sans-serif;
+    font-weight: bold;
+    font-size: 12px;
 }
 /*after link has been click it stays the same*/
 .left-nav-item a:visited {
@@ -39,8 +41,8 @@
 }
 .site-search {
     padding: 4px 15px 2px 15px;
-    margin:.3em;
-    width: 250px;
+    margin-top: .5em;
+    width: 320px;
     display: inline-block;
     font-size: 12px;
     box-shadow: inset 2px;
@@ -65,13 +67,13 @@
     padding: .2em;
 }
 .header-nav-left {
-    margin-left: 20em;
+    margin-left: 28em;
     margin-top: -1.5em;
     }
 .header-nav-right  {
     float:right;
-    margin-top: -1.5em;
-    margin-right: 1em;
+    margin-top: -1.8em;
+    margin-right: 1.5em;
 }
 .footer-container {
     border-top: 1px solid #E5E5E5;
@@ -141,6 +143,11 @@
     position:relative;
     margin-left: 20em;
     margin-top: 1em;
+}
+
+.octicon-triangle-down {
+    font-size: 5px;
+    padding: .2em;
 }
 
 
