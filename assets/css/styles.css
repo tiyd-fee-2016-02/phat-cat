@@ -25,7 +25,7 @@
 .left-nav-item a:hover {
     color: #51a7e8;
 }
-.octicon:hover {
+.octicon-mark-github:hover {
     color: #51a7e8;
 }
 
@@ -94,7 +94,8 @@
     font-family: Helvetica, Arial, sans-serif;
         text-decoration: none;
         font-size: 12px;
-        margin-top: 1em;
+        margin-top: 2em;
+        margin-left: 25px;
 }
 
 .site-foooter-links-left {
@@ -107,7 +108,7 @@
     font-family: Helvetica, Arial, sans-serif;
     font-size:12px;
     float: left;
-    margin-top: 1em;
+    margin-top: 2em;
 }
 
 .footer-links-left a:link {
@@ -148,11 +149,10 @@
     padding: .1em;
 }
 .bottom-logo {
-    text-align: center;
     color:#999999;
-    position:relative;
-    margin-left: 20em;
-    margin-top: 1em;
+    position:absolute;
+    left:50%;
+    bottom: 58px;
 }
 
 .octicon-triangle-down {
