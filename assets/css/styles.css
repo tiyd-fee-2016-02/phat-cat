@@ -29,6 +29,16 @@
     color: #51a7e8;
 }
 
+.octicon-octoface {
+    color: #333;
+}
+
+.header-container: {
+    width: 980px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 .header-logo {
     font-size: 28px;
     margin-left: .2em;
@@ -156,6 +166,7 @@
 
 
 
+
 /*------------
   grid setup
 ------------*/
@@ -164,6 +175,11 @@
 [class*='col-'] {
   float: left;
 }
+/*set wdith of header to 100% of grid*/
+.col-4-4 {
+    width: 100%;
+}
+
 /* set width of first column to 1/4 of gid */
 .col-1-4 {
   width: 26%;
@@ -175,6 +191,7 @@
   width: 74%;
   border: 1px dashed #000;
 }
+
 
 /* clear fix -
     prevent parent element from collapsing to zero height since it
