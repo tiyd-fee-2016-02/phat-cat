@@ -1,6 +1,7 @@
 $(function () {
   'use strict';
 
+  // show and hide tab content when tabs are clicked
   $("[id*='-tab']").on("click", function() {
     $("[id*='-tab']").removeClass("clicked-tab");
     $("[id*='-tab-content']").hide();
