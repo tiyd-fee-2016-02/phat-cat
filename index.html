@@ -109,7 +109,7 @@
 
               </div>
                 <nav class="tabs">
-                  <a href="#" id="cont-tab" class="tab-link"><span class="octicon octicon-diff-added"></span> &nbsp; Contribution</a>
+                  <a href="#" id="cont-tab" class="tab-link clicked-tab"><span class="octicon octicon-diff-added"></span> &nbsp; Contribution</a>
                   <a href="#" id="repo-tab" class="tab-link"><span class="octicon octicon-repo"></span> &nbsp; Repositories</a>
                   <a href="#" id="act-tab" class="tab-link"><span class="octicon octicon-rss"></span> &nbsp; Activity</a>
                 </nav>
@@ -172,11 +172,26 @@
                         </a>
                       </li>
                     </ul>
+                    <div> <!-- heat map image place holder -->
+                      <br>
+                      <img class="heat-map" src="./assets/images/heat-map.png" alt="Heat Map">
+                    </div>
+                    <!-- <br> -->
 
+                    <div class="cont-act-container">
+                      <span class="cont-act-btn">
+                        <span>Period: <span class="cont-act-btn-weight">1 Week</span></span>
+                        <span class="octicon octicon-triangle-down"></span>
+                      </span>
+                      <h2 class="cont-act-title">Contribtution activity</h2>
+                    </div>
+                    <div class="activity-box">
+                      octocat has no activity during this period.
+                    </div>
 
+                    <br>
                   </div>
-                </div>
-
+                </div> <!-- end cont-tab-content -->
 
               </div>
             </div>
