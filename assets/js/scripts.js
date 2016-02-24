@@ -1,6 +1,9 @@
 $(function () {
   'use strict';
 
+  $("#repo-tab-content").hide();
+  $("#act-tab-content").hide();
+
   // show and hide tab content when tabs are clicked
   $("[id*='-tab']").on("click", function() {
     $("[id*='-tab']").removeClass("clicked-tab");
