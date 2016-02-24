@@ -10,8 +10,8 @@ $(function () {
     $("[id*='-tab-content']").hide();
     $(this).addClass("clicked-tab");
     $("#" + $(this).attr("id") + "-content").show();
-    console.log("**" + $(this).attr("id") + "-content is visible **");
-    console.log("** " + $(this).attr("id") + " clicked **");
+    // console.log("** " + $(this).attr("id") + "-content is visible **");
+    // console.log("** " + $(this).attr("id") + " clicked **");
   });
 
 });  // End of file.
