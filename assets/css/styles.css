@@ -184,6 +184,9 @@
 .bottom-logo {
     color:#999999;
     bottom: 28px;
+    text-align: center;
+    margin-left: 140px;
+    margin-top: 40px;
 }
 
 .octicon-triangle-down {
@@ -204,7 +207,13 @@
 .header-column {
     width: 980px;
     margin-right: auto;
-    margin: auto;
+    margin-left: auto;
+}
+.footer-column {
+    width: 980px;
+    margin-right:auto;
+    margin-left:auto;
+
 }
 
 /* set width of first column to 1/4 of gid */
