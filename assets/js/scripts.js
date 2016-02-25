@@ -55,7 +55,7 @@ $(function () {
     });  // end JSON #2
   });  //end JSON #1
 
-  // get repos for repo tab
+  // get repos and build HTML for repo tab
   $.getJSON(("https://api.github.com/users/octocat/repos"), function (value) {
 
     var myReposTemp = _.template("<%- m.name %> "
@@ -64,8 +64,10 @@ $(function () {
     // var myName = myReposTemp({ name: value.name});
     // var myDesc = myReposTemp({ name: value.description});
 
-  var myStats = { 0 : "10,432", 1 : "9,933", 2 : "6,132",
-                  3 : "88", 4 : "31", 5 : "22", 6 : "3" };
+    var myStats = {
+      0 : "10,432", 1 : "9,933", 2 : "6,132",
+      3 : "88", 4 : "31", 5 : "22", 6 : "3"
+    };
 
     var myHTML =
       "        <h3 class='repo-title'>Popular Repositories</h3>\n" +
