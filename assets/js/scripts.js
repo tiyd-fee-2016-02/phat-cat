@@ -41,9 +41,9 @@ $(function () {
     $("#userLocation").html(myUserTemp({ name: value.location}));
     $("#emailAddress").html(myUserTemp({ name: value.email}));
     $("#userURL").html(myUserTemp({ name: value.blog}));
-    $("#startDate").html(formatDate(myUserTemp({ name: value.created_at})));
+    $("#startDate").html(formatDate( myUserTemp({ name: value.created_at})));
     $("#following").html(myUserTemp({ name: value.following}));
-    $("#followers").html(formatNumber(myUserTemp({ name: value.followers})));
+    $("#followers").html(formatNumber( myUserTemp({ name: value.followers})));
 
     // need to count the starred repos form a different JSON file
     $.getJSON(("https://api.github.com/users/octocat/starred"), function (value) {
