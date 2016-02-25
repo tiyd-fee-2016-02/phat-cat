@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.5.1/lodash.js"></script>
     <link type="text/css" rel="stylesheet" href="http://meyerweb.com/eric/tools/css/reset/reset.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link type="text/css" rel="stylesheet" href="./assets/css/styles.css">
@@ -46,47 +47,47 @@
 
             <div class="col-1-4"> <!-- col-1-4 container 25% wide -->
               <a href="#" class="pos-relative-a dis-block">   <!-- first or left column content -->
-                <img class="octocat-image rounded" src="./assets/images/octocat.jpg" alt="Octocat">
+                <img id="profileImage" class="octocat-image rounded" src="./assets/images/octocat.jpg" alt="Profile Image">
               </a>
               <h1 class="user-h1">
-                <div class="full-name">The Octocat</div>
-                <div class="user-name">octocat</div>
+                <div id="fullName" class="full-name">xxx</div>
+                <div id="loginId" class="user-name">xxx</div>
               </h1>
               <ul class="pad-top-bottom border-top">
                 <li class="user-info pad-li">
                   <span class="octicon octicon-organization"></span> &nbsp;
-                  GitHub
+                  <span id="company">xxx</span>
                 </li>
                 <li class="user-info pad-li">
                   <span class="octicon octicon-location"></span> &nbsp;
-                  San Francisco
+                  <span id="userLocation">xxx</span>
                 </li>
                 <li class="user-info pad-li">
                   <span class="octicon octicon-mail"></span> &nbsp;
-                  <a href="#" class="user-info-link">octocat@github.com</a>
+                  <a href="#" id="emailAddress" class="user-info-link">xxx</a>
                 </li>
                 <li class="user-info pad-li">
                   <span class="octicon octicon-link"></span> &nbsp;
-                  <a href="#" class="user-info-link">http://github.com/blog</a>
+                  <a href="#" id="userURL" class="user-info-link">xxx</a>
                 </li>
                 <li class="user-info pad-li">
                   <span class="octicon octicon-clock"></span> &nbsp;
-                  Joined on Jan 25, 2011
+                  <span id="startDate">xxx</span>
                 </li>
               </ul>
               <div class="user-stats border-top border-bottom pad-top-bottom">
                 <a href="#" class="user-stat-link">
-                  <strong class="user-stat-value">1.3k</strong>
+                  <strong id="followers" class="user-stat-value">xxx</strong>
                   <br>
                   <span class="text-muted">Followers</span>
                 </a>
                 <a href="#" class="user-stat-link">
-                  <strong class="user-stat-value">2</strong>
+                  <strong id="stars" class="user-stat-value">xxx</strong>
                   <br>
                   <span class="text-muted">Starred</span>
                 </a>
                 <a href="#" class="user-stat-link">
-                  <strong class="user-stat-value">6</strong>
+                  <strong id="following" class="user-stat-value">xxx</strong>
                   <br>
                   <span class="text-muted">Following</span>
                 </a>
