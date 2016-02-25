@@ -6,7 +6,8 @@ $(function () {
   $("#act-tab-content").hide();
 
   // show and hide tab content when tabs are clicked
-  $("[id*='-tab']").on("click", function() {
+  $("[id*='-tab']").on("click", function(e) {
+    e.preventDefault();
     $("[id*='-tab']").removeClass("clicked-tab");
     $("[id*='-tab-content']").hide();
     $(this).addClass("clicked-tab");
@@ -54,7 +55,7 @@ $(function () {
     });  // end JSON #2
   });  //end JSON #1
 
-  // get repos
+  // get repos for repo tab
   $.getJSON(("https://api.github.com/users/octocat/repos"), function (value) {
 
     var myReposTemp = _.template("<%- m.name %> "
@@ -62,10 +63,60 @@ $(function () {
     // do not need to bind in this case
     // var myName = myReposTemp({ name: value.name});
     // var myDesc = myReposTemp({ name: value.description});
+
+    // var myHTML =
+    //   "        <li class='repo-list-item'>\n" +
+    //   "          <a href='#' class='repo-link'>\n" +
+    //   "           <span class='repo-icon octicon octicon-repo'></span> &nbsp; \n" +
+    //   "           <span class='repo-name'>" + obj.name + "</span>\n" +
+    //   "           <span class='repo-stars\'> 9,933 <span class='octicon octicon-star'></span></span>\n" +
+    //   "           <br>\n" +
+    //   "           <span class='repo-desc'>" + obj.description + ".</span>\n" +
+    //   "         </a>\n" +
+    //   "       </li>\n";
+
+    var myHTML =
+      "        <h3 class='repo-title'>Popular Repositories</h3>\n" +
+      "        <ul class='repo-list'>\n";
+
     $(value).each( function (index, obj) {
-      console.log(index + " : " + obj.name);
-      console.log(index + " : " + obj.description);
+      myHTML +=
+        "        <li class='repo-list-item'>\n" +
+        "          <a href='#' class='repo-link'>\n" +
+        "           <span class='repo-icon octicon octicon-repo'></span> &nbsp; \n" +
+        "           <span class='repo-name'>" + obj.name + "</span>\n" +
+        "           <span class='repo-stars\'> 9,933 <span class='octicon octicon-star'></span></span>\n" +
+        "           <br>\n" +
+        "           <span class='repo-desc'>" + obj.description + ".</span>\n" +
+        "         </a>\n" +
+        "       </li>\n";
+      // console.log(index + " : " + obj.name);
+      // console.log(index + " : " + obj.description);
     });
+
+    myHTML +=
+      "      </ul>\n" +
+      "      <div> <!-- heat map image place holder -->\n" +
+      "       <br>\n" +
+      "       <img class='heat-map' src='./assets/images/heat-map.png' alt='Heat Map'>\n" +
+      "      </div>\n" +
+      "      <div class='cont-act-container'>\n" +
+      "       <span class='cont-act-btn'>\n" +
+      "         <span>Period: <span class='cont-act-btn-weight'>1 Week</span></span>\n";
+    myHTML +=
+      "         <span class='octicon octicon-triangle-down'></span>\n" +
+      "       </span>\n" +
+      "       <h2 class='cont-act-title'>Contribtution activity</h2>\n" +
+      "     </div>\n" +
+      "     <div class='activity-box'>\n" +
+      "     octocat has no activity during this period.\n" +
+      "     </div>\n" +
+      "     <br>\n" +
+      "   </div>\n" +
+      " </div> <!-- end cont-tab-content -->";
+
+    $("#cont-tab-content").html(myHTML);
+    console.log(myHTML);
   });  // end JSON #3
 
   function formatNumber(num) {

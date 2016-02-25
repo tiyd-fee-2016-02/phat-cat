@@ -10,7 +10,6 @@
     <title>Phat Cat</title>
   </head>
   <body>
-
     <header>
         <div class="header-container" role="banner">
             <div class="header-column">
@@ -40,12 +39,10 @@
           </div>
       </div>
     </header>
-
     <div class="whole-page"> <!-- whole page -->
       <div class="ajax-container"> <!-- ajax container -->
         <div class="main-content"> <!-- content container -->
           <div class="grid"> <!-- column container -->
-
             <div class="col-1-4"> <!-- col-1-4 container 25% wide -->
               <a href="#" class="pos-relative-a dis-block">   <!-- first or left column content -->
                 <img id="profileImage" class="octocat-image rounded" src="./assets/images/octocat.jpg" alt="Profile Image">
@@ -110,13 +107,13 @@
                 <nav class="tabs">
                   <a href="#" id="cont-tab" class="tab-link clicked-tab"><span class="octicon octicon-diff-added"></span> &nbsp; Contribution</a>
                   <a href="#" id="repo-tab" class="tab-link"><span class="octicon octicon-repo"></span> &nbsp; Repositories</a>
-                  <a href="#" id="act-tab" class="tab-link"><span class="octicon octicon-rss"></span> &nbsp; Activity</a>
+                  <a href="#" id="act-tab" class="tab-link"><span class="octicon octicon-rss"></span> &nbsp; Public Activity</a>
                 </nav>
                 <div id="cont-tab-content" class="cont-tab-wrapper"> <!-- contribution tab content -->
                   <div class="repo-container">
                     <h3 class="repo-title">Popular Repositories</h3>
                     <ul class="repo-list">
-                      <li class="repo-list-item">
+                        <li class="repo-list-item">
                         <a href="#" class="repo-link">
                           <span class="repo-icon octicon octicon-repo"></span> &nbsp;
                           <span class="repo-name">Spoon-Knife</span>
@@ -190,34 +187,108 @@
                 </div> <!-- end cont-tab-content -->
 
                 <div id="repo-tab-content" class="repo-tab-wrapper"> <!-- begin repositories tab content -->
-                  <br>Repositories Content.<br>
+
+                  <div class="repo-container">
+                    <ul class="repo-content-list">
+                      <li class="repo-content-list-item">
+                        <a href="#" class="repo-content-link">
+                          <span class="repo-content-name">Spoon-Knife</span>
+                          <span class="repo-content-icons"> HTML <span class="octicon octicon-star"></span> 9,933 <span class="octicon octicon-git-branch"></span> 79,765</span>
+                          <br>
+                          <span class="repo-content-desc">This repo is for demonstation purposes only.</span>
+                          <br>
+                          <span class="repo-content-desc">Updated 5 hours ago</span>
+                          <br>
+                        </a>
+                      </li>
+                      <li class="repo-content-list-item">
+                        <a href="#" class="repo-content-link">
+                          <span class="repo-content-name">Kitty Keyboard</span>
+                          <span class="repo-content-icons"> Sassy <span class="octicon octicon-star"></span> 1,409 <span class="octicon octicon-git-branch"></span> 28,022</span>
+                          <br>
+                          <span class="repo-content-desc">This repo is purrrrfect.</span>
+                          <br>
+                          <span class="repo-content-desc">Updated 1 hours ago</span>
+                          <br>
+                        </a>
+                      </li>
+                      <li class="repo-content-list-item">
+                        <a href="#" class="repo-content-link">
+                          <span class="repo-content-name">Hello World</span>
+                          <span class="repo-content-icons"><span class="octicon octicon-star"></span> 902 <span class="octicon octicon-git-branch"></span> 8,996</span>
+                          <br>
+                          <span class="repo-content-desc">This is my first repo on GitHub!</span>
+                          <br>
+                          <span class="repo-content-desc">Updated 14 days ago</span>
+                          <br>
+                        </a>
+                      </li>
+                      <li class="repo-content-list-item">
+                        <a href="#" class="repo-content-link">
+                          <span class="repo-content-name">hello world</span>
+                          <span class="repo-content-icons"> CSS <span class="octicon octicon-star"></span> 599 <span class="octicon octicon-git-branch"></span> 2,434</span>
+                          <br>
+                          <span class="repo-content-desc">This is my first repo on GitHub.</span>
+                          <br>
+                          <span class="repo-content-desc">Updated 18 hours ago</span>
+                          <br>
+                        </a>
+                      </li>
+                      <li class="repo-content-list-item">
+                        <a href="#" class="repo-content-link">
+                          <span class="repo-content-name">octocat.github.io</span>
+                          <span class="repo-content-icons"><span class="octicon octicon-star"></span> 376 <span class="octicon octicon-git-branch"></span> 1,998</span>
+                          <br>
+                          <span class="repo-content-desc"></span>
+                          <br>
+                          <span class="repo-content-desc">Updated 22 hours ago</span>
+                          <br>
+                        </a>
+                      </li>
+                      <li class="repo-content-list-item">
+                        <a href="#" class="repo-content-link">
+                          <span class="repo-content-name">git-consortium</span>
+                          <span class="repo-content-icons"><span class="octicon octicon-star"></span> 4 <span class="octicon octicon-git-branch"></span> 2</span>
+                          <br>
+                          <span class="repo-content-desc">This repo is for demonstation purposes only.</span>
+                          <br>
+                          <span class="repo-content-desc">Updated 28 days ago</span>
+                          <br>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
                 </div><!-- end repo-tab-content -->
-
                 <div id="act-tab-content" class="act-tab-wrapper"> <!-- begin activity tab content -->
-                  <br>Activity Content.<br>
+                  <div class="cont-act-container">
+                    <span class="cont-act-btn">
+                      <span>Period: <span class="cont-act-btn-weight">1 Week</span></span>
+                      <span class="octicon octicon-triangle-down"></span>
+                    </span>
+                  </div>
+                  <div class="activity-box">
+                    octocat has no activity during this period.
+                  </div>
                 </div><!-- end act-tab-content -->
-
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-
-    <footer>
-      <div class="footer-container">
-         <div class="footer-column">
-         <div class="site-footer-links">
-         <ul class="site-footer-links-left">
-            <li class="footer-links-info foooter-links-left"> 2016 GitHub, Inc.</li>
-            <li class="footer-links-left"><a href="#">Terms</a></li>
-            <li class="footer-links-left"><a href="#">Privacy</a></li>
-            <li class="footer-links-left"><a href="#">Security</a></li>
-            <li class="footer-links-left"><a href="#">Contact</a></li>
-            <li class="footer-links-left"><a href="#">Help</a></li>
-        </ul>
-        <div id="bottom-logo" class="bottom-logo octicon octicon-mark-github"></div>
-        <ul class="footer-links-right">
+      <footer>
+        <div class="footer-container">
+          <div class="footer-column">
+            <div class="site-footer-links">
+              <ul class="site-footer-links-left">
+                <li class="footer-links-info foooter-links-left"> 2016 GitHub, Inc.</li>
+                <li class="footer-links-left"><a href="#">Terms</a></li>
+                <li class="footer-links-left"><a href="#">Privacy</a></li>
+                <li class="footer-links-left"><a href="#">Security</a></li>
+                <li class="footer-links-left"><a href="#">Contact</a></li>
+                <li class="footer-links-left"><a href="#">Help</a></li>
+              </ul>
+              <div id="bottom-logo" class="bottom-logo octicon octicon-mark-github"></div>
+              <ul class="footer-links-right">
                 <li class="footer-links-right"><a href="#">Status</a></li>
                 <li class="footer-links-right"><a href="#">API</a></li>
                 <li class="footer-links-right"><a href="#">Training</a></li>
@@ -227,10 +298,9 @@
                 <li class="footer-links-right"><a href="#">Pricing</a></li>
             </ul>
           </div>
+        </div>
       </div>
-  </div>
     </footer>
-
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="./assets/js/scripts.js"></script>
