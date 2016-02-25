@@ -18,8 +18,8 @@ $(function () {
   });
 
   // var myUser = "ebonertz"
-  // var myUser = "dennisgoldin";
-  var myUser = "octocat";
+  var myUser = "dennisgoldin";
+  // var myUser = "octocat";
 
   // $.getJSON(("apis/github/users/octocat.json"), function (value) {
   $.getJSON(("http://api.github.com/users/" + myUser), function (value) {
@@ -63,18 +63,6 @@ $(function () {
     // do not need to bind in this case
     // var myName = myReposTemp({ name: value.name});
     // var myDesc = myReposTemp({ name: value.description});
-
-    // var myHTML =
-    //   "        <li class='repo-list-item'>\n" +
-    //   "          <a href='#' class='repo-link'>\n" +
-    //   "           <span class='repo-icon octicon octicon-repo'></span> &nbsp; \n" +
-    //   "           <span class='repo-name'>" + obj.name + "</span>\n" +
-    //   "           <span class='repo-stars\'> 9,933 <span class='octicon octicon-star'></span></span>\n" +
-    //   "           <br>\n" +
-    //   "           <span class='repo-desc'>" + obj.description + ".</span>\n" +
-    //   "         </a>\n" +
-    //   "       </li>\n";
-
     var myHTML =
       "        <h3 class='repo-title'>Popular Repositories</h3>\n" +
       "        <ul class='repo-list'>\n";
